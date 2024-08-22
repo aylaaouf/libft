@@ -6,11 +6,11 @@
 /*   By: aylaaoufi <ayoub.laaoufi@hotmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:04:19 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/22 16:23:02 by aylaaoufi        ###   ########.fr       */
+/*   Updated: 2024/08/22 17:51:37 by aylaaoufi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
