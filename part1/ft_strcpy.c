@@ -1,23 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: aylaaoufi <ayoub.laaoufi@hotmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/22 18:43:56 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/22 18:43:59 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/08/22 18:26:19 by aylaaoufi         #+#    #+#             */
+/*   Updated: 2024/08/22 18:26:20 by aylaaoufi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
