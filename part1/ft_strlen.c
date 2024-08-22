@@ -6,7 +6,7 @@
 /*   By: aylaaoufi <ayoub.laaoufi@hotmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:04:19 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/22 18:10:41 by aylaaoufi        ###   ########.fr       */
+/*   Updated: 2024/08/22 18:19:42 by aylaaoufi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-/*int main()
-{
-	char a[] = "ayoub";
-	printf("%zu\n", ft_strlen(a));
-}*/

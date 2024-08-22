@@ -6,7 +6,7 @@
 /*   By: aylaaoufi <ayoub.laaoufi@hotmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:36:06 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/22 18:11:31 by aylaaoufi        ###   ########.fr       */
+/*   Updated: 2024/08/22 18:19:35 by aylaaoufi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,3 @@ char	*ft_strdup(const char *s1)
 	s2[i] = '\0';
 	return (s2);
 }
-
-/*int main()
-{
-	printf("%s\n", ft_strdup("Hello World!"));
-}*/
