@@ -1,29 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaoufi <ayoub.laaoufi@hotmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/22 16:04:19 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/22 18:10:41 by aylaaoufi        ###   ########.fr       */
+/*   Created: 2024/08/22 16:36:06 by aylaaoufi         #+#    #+#             */
+/*   Updated: 2024/08/22 17:47:19 by aylaaoufi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strdup(const char *s1)
 {
-	int	i;
+	char	*s2;
+	unsigned int	i;
+	size_t	len = ft_strlen(s1);
 
+	s2 = (char *)malloc(len + 1);
 	i = 0;
-	while (s[i])
+	if (s2 == NULL)
+		return (NULL);
+	while (i < len)
+	{
+		s2[i] = s1[i];
 		i++;
-	return (i);
+	}
+	s2[i] = '\0';
+	return (s2);
 }
 
-/*int main()
+int main()
 {
-	char a[] = "ayoub";
-	printf("%zu\n", ft_strlen(a));
-}*/
+	printf("%s\n", ft_strdup("Hello World!"));
+}
