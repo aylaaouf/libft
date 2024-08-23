@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:58:21 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/24 00:14:01 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/24 00:32:03 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int     ft_isascii(int c);
 int     ft_isalnum(int c);
 char    *ft_strcat(char *s1, const char *s2);
 char    *ft_strncat(char *s1, const char *s2, size_t n);
+char    *ft_strncpy(char *dst, const char *src, size_t len);
 
 #endif
