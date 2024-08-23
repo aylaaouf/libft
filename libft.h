@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:58:21 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/23 22:15:23 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/23 22:44:31 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ int     ft_atoi(const char *str);
 int     ft_toupper(int c);
 int     ft_isprint(int c);
 int     ft_isascii(int c);
+int     ft_isalnum(int c);
 
 #endif
