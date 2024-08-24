@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 03:18:41 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/24 04:02:47 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/24 04:27:40 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void *ft_memcpy(void *dst, const void *src, size_t n)
 
     s1 = (unsigned char *)dst;
     s2 = (const unsigned char *)src;
-    if (!s1 && !s2)
+    if (!s1 || !s2)
     {
         return (NULL);
     }
