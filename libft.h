@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:58:21 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/24 03:30:26 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/26 01:10:43 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ char    *ft_strcat(char *s1, const char *s2);
 char    *ft_strncat(char *s1, const char *s2, size_t n);
 char    *ft_strncpy(char *dst, const char *src, size_t len);
 void    *ft_memcpy(void *dst, const void *src, size_t n);
+size_t  strlcpy(char *dst, const char *src, size_t size);
 
 #endif
