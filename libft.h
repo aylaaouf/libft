@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:58:21 by aylaaoufi         #+#    #+#             */
-/*   Updated: 2024/08/26 22:48:33 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/27 01:05:49 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ void    *ft_memcpy(void *dst, const void *src, size_t n);
 size_t  strlcpy(char *dst, const char *src, size_t size);
 void    ft_bzero(void *s, size_t len);
 size_t  ft_strlcat(char *dst, const char *src, size_t size);
+void    *ft_memset(void *b, int c, size_t len);
 
 #endif
