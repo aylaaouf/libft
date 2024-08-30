@@ -6,11 +6,11 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 00:05:57 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/31 00:06:00 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/31 00:11:11 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+#ifndef  LIBFT_H
 # define LIBFT_H
 
 #include <stdlib.h>
