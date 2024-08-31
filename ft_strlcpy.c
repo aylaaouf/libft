@@ -6,13 +6,13 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 00:34:34 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/26 01:47:04 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/31 02:42:48 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t strlcpy(char *dst, const char *src, size_t size)
+size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
     size_t len;
     size_t i;
