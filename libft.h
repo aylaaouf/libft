@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 00:05:57 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/31 00:11:11 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/08/31 02:41:55 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
 void    *ft_memchr(const void *s, int c, size_t n);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len);
+int     ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif
