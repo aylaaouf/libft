@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/08 17:47:17 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/09/12 12:42:20 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:47:58 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,4 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     }
     s2[i] = '\0';
     return (s2);
-}
-
-int main() {
-    char *str = "hello world";
-    char *substr = ft_substr(str, 4, 5);
-
-    printf("Substring: %s\n", substr); // Output: "llo w"
-
-    free(substr);
-    return 0;
 }
