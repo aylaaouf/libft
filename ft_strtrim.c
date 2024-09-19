@@ -6,46 +6,53 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 17:57:59 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/09/12 18:08:21 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/09/18 17:41:39 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+int ft_match(char c, char const *set)
 {
-    char *ptr;
-    int i;
-    int j;
-    int x;
-
-    ptr = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
+    size_t i;
+    
     i = 0;
-    j = 0;
-    x = 0;
-    if (!ptr)
-        return (NULL);
-    while (s1[i])
+    while (set[i])
     {
-        if (s1[i] != set[j])
+        if (set[i] == c)
         {
-            ptr[x++] = s1[i];
-            j++;
-            x++;
+            return (1);
         }
         i++;
     }
-    ptr[x] = '\0';
-    return (ptr);
+    return (0);
 }
 
-int main() {
-    char *str = "  Hello, world!  ";
-    char *set = " \t\n";
-    char *result = ft_strtrim(str, set);
+char *ft_strtrim(char const *s1, char const *set)
+{
+    char *str;
+    size_t start;
+    size_t end;
+    size_t i;
 
-    printf("%s\n", result); // Output: Hello, world!
-
-    free(result); // Don't forget to free the allocated memory
-    return 0;
+    if (!s1 || !set)
+        return (NULL);
+    start = 0;
+    end = ft_strlen(s1) - 1;
+    i = 0;
+    while (s1[start] && ft_match(s1[start], set))
+        start++;
+    while (s1[end] && ft_match(s1[end], set))
+        end--;
+    str = (char *)malloc(sizeof(char) * (end - start + 2));
+    if (!str)
+        return (NULL);
+    while (start <= end)
+    {
+        str[i] = s1[start];
+        i++;
+        start++;
+    }
+    str[i] = '\0';
+    return (str);
 }
