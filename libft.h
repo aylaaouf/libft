@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 00:05:57 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/09/18 17:40:54 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/09/23 10:12:59 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ void    *ft_calloc(size_t count, size_t size);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
 char    *ft_strtrim(char const *s1, char const *set);
+char    **ft_split(char const *s, char c);
 
 #endif
