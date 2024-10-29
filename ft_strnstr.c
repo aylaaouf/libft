@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/31 04:56:37 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/31 04:56:40 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/26 15:28:08 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/26 16:13:35 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,17 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 
     i = 0;
     if (needle[0] == '\0')
-        return (char *)(haystack);
+        return (char *)haystack;
     while (haystack[i] && i < len)
     {
         j = 0;
-        while (needle[j] && needle[j] == haystack[i + j] && (i + j) < len)
+        while (needle[j] && haystack[i + j] == needle[j] && i + j < len)
         {
             j++;
         }
         if (needle[j] == '\0')
         {
-            return (char *)(&haystack[i]);
+            return (char *)&haystack[i];
         }
         i++;
     }

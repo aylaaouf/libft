@@ -5,19 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/22 18:43:56 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/22 18:43:59 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/23 10:37:56 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/23 10:43:27 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libc.h"
 
-size_t	ft_strlen(const char *s)
+size_t    ft_strlen(const char *s)
 {
-	int	i;
+    size_t i;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+    i = 0;
+    while (s[i])
+    {
+        i++;
+    }
+    return (i);
 }

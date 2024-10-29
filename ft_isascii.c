@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/23 21:51:36 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/23 22:10:47 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/22 15:58:49 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/22 16:11:50 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int    ft_isascii(int c)
 {
     if (c >= 0 && c <= 127)
     {

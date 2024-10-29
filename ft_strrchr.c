@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/27 16:10:37 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/27 16:27:00 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/25 11:19:25 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/25 11:58:13 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char *ft_strrchr(const char *s, int c)
     last = NULL;
     while (s[i])
     {
-        if (s[i] == (char)c && s[i + 1] != c)
+        if (s[i] == c)
         {
             last = (char *)&s[i];
         }

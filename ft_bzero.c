@@ -5,23 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/26 01:54:49 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/09/20 16:39:17 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/23 12:41:25 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/23 16:50:49 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t len)
+void    ft_bzero(void *s, size_t n)
 {
     size_t i;
-    unsigned char *str;
+    unsigned char *ptr;
 
     i = 0;
-    str = (unsigned char *)s;
-    while (i < len)
+    ptr = (unsigned char *)s;
+    while (i < n)
     {
-        str[i] = 0;
+        ptr[i] = 0;
         i++;
     }
 }

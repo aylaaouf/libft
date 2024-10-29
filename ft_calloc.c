@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/31 05:21:20 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/31 05:44:50 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/26 17:17:08 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/26 17:41:50 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 void *ft_calloc(size_t count, size_t size)
 {
     size_t total;
-    void *ptr;
+    unsigned char *ptr;
 
     total = count * size;
     ptr = malloc(total);
-    if (ptr == NULL)
+    if (!ptr)
     {
         return (NULL);
     }

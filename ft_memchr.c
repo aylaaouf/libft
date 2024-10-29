@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/27 21:58:10 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/27 22:15:27 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/25 12:35:48 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/25 15:08:45 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void *ft_memchr(const void *s, int c, size_t n)
     str = (unsigned char *)s;
     while (str[i] && i < n)
     {
-        if (str[i] == (unsigned char)c)
+        if (str[i] == c)
         {
             return (void *)&str[i];
         }

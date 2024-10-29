@@ -5,18 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/23 22:44:02 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/23 22:49:10 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/22 15:44:12 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/22 15:51:25 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int    ft_isalnum(int c)
 {
-    if ((c >= 'a' && c <= 'z') ||
-        (c >= 'A' && c <= 'Z') ||
-        (c >= '0' && c <= '9'))
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
     {
         return (1);
     }

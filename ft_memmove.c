@@ -5,35 +5,39 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/27 08:04:34 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/29 02:30:38 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/23 19:15:29 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/24 19:12:29 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void    *ft_memmove(void *dst, const void *src, size_t len)
 {
-    unsigned char *s1;
-    const unsigned char *s2;
+    unsigned char *d;
+    const unsigned char *s;
     size_t i;
+    int j;
 
-    s1 = (unsigned char *)dst;
-    s2 = (const unsigned char *)src;
+    d = (unsigned char *)dst;
+    s = (const unsigned char *)src;
     i = 0;
-    if (s1 > s2 && s1 < s2 + len)
+    j = len - 1;
+    if (!s && !d)
+        return (NULL);
+    if (d > s)
     {
-        while (len > 0)
+        while (j >= 0)
         {
-            s1[len] = s2[len];
-            len--;
+            d[j] = s[j];
+            j--;
         }
     }
     else
     {
         while (i < len)
         {
-            s1[i] = s2[i];
+            d[i] = s[i];
             i++;
         }
     }

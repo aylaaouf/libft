@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/23 02:15:51 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/23 02:43:45 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/25 10:43:27 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/25 10:45:29 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int    ft_tolower(int c)
 {
     if (c >= 'A' && c <= 'Z')
     {

@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/23 21:37:29 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/23 21:44:26 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/23 10:22:54 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/23 10:36:58 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int    ft_isprint(int c)
 {
     if (c >= 32 && c <= 126)
     {

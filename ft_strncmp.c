@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/23 00:01:33 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/08/23 00:13:01 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/25 11:59:02 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/10/25 12:20:36 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
 
     i = 0;
     while (s1[i] == s2[i] && s1[i] && s2[i] && i < n)
+    {
         i++;
-    return (s1[i] - s2[i]);
+    }
+    if (i == n)
+    {
+        return (0);
+    }
+    return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
