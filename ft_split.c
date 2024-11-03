@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 21:40:40 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/10/27 23:23:33 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/11/03 19:56:36 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,20 +38,24 @@ int ft_count(char const *str, char c)
 char *ft_copy(char *str, int start, int end)
 {
     char *word;
-    int i;
-
-    word = (char *)malloc(sizeof(char) * (end - start + 2));
+	int len;
+	
+	len = end - start;
+    word = (char *)malloc(sizeof(char) * (len + 1));
     if (!word)
         return (NULL);
-    i = 0;
-    while (start < end)
-    {
-        word[i] = str[start];
-        i++;
-        start++;
-    }
-    word[i] = '\0';
+	ft_strlcpy(word, &str[start], len + 1);
     return (word);
+}
+
+void ft_free(char **result, int j)
+{
+	while (j >= 0)
+	{
+		free(result[j]);
+		j--;
+	}
+	free(result);
 }
 
 char **ft_split(char const *s, char c)
@@ -80,6 +84,11 @@ char **ft_split(char const *s, char c)
         if (start < i)
         {
             result[j] = ft_copy((char *)s, start, i);
+			if (!result[j])
+			{
+				ft_free(result, j - 1);
+				return (NULL);
+			}
             j++;
         }
     }

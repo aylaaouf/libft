@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 16:53:03 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/11/03 16:44:58 by aylaaouf         ###   ########.fr       */
+/*   Created: 2024/10/30 18:25:27 by aylaaouf          #+#    #+#             */
+/*   Updated: 2024/11/03 20:30:02 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memcpy(void *dst, const void *src, size_t n)
+void    ft_putnbr_fd(int n, int fd)
 {
-    unsigned char *d;
-    const unsigned char *s;
-    size_t i;
-
-    d = (unsigned char *)dst;
-    s = (const unsigned char *)src;
-    i = 0;
-    if (!d && !s)
-        return (NULL);
-    while (i < n)
+    if (n == -2147483648)
     {
-        d[i] = s[i];
-        i++;
+        ft_putchar_fd('-', fd);
+        ft_putchar_fd('2', fd);
+        n = 147483648;
     }
-    return (dst);
+    if (n < 0)
+    {
+        ft_putchar_fd('-', fd);
+        n *= -1;
+    }
+    if (n < 10)
+    {
+        ft_putchar_fd(n + '0', fd);
+    }
+    else
+    {
+        ft_putnbr_fd(n / 10, fd);
+        ft_putchar_fd((n % 10) + '0', fd);
+    }
 }

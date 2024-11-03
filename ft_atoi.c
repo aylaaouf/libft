@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:22:15 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/10/26 17:13:40 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/11/03 20:39:04 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int    ft_atoi(const char *str)
     i = 0;
     result = 0;
     sign = 1;
-    while (str[i] == ' ' || str[i] == '\t')
+    while ((str[i] >= 9  && str[i] <= 13) || str[i] == 32)
         i++;
     if (str[i] == '+' || str[i] == '-')
     {
@@ -37,4 +37,9 @@ int    ft_atoi(const char *str)
         i++;
     }
     return (result * sign);
+}
+
+int main()
+{
+	printf("%d\n", ft_atoi("-9223372036854775808"));
 }

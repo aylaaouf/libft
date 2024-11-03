@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 19:53:17 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/10/27 20:42:06 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/11/03 20:25:51 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char *ft_strtrim(char const *s1, char const *set)
     s = 0;
     while (s1[start] && ft_check(s1[start], set))
         start++;
-    while (s1[end] && ft_check(s1[end], set))
+    while (end >= start && ft_check(s1[end], set))
         end--;
     if (end < start)
         return ft_strdup("");
