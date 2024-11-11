@@ -6,7 +6,7 @@
 /*   By: aylaaouf <aylaaouf@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:59:02 by aylaaouf          #+#    #+#             */
-/*   Updated: 2024/11/09 17:53:06 by aylaaouf         ###   ########.fr       */
+/*   Updated: 2024/11/11 20:42:00 by aylaaouf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] && s2[i] && i < n)
+	while (i < n && s1[i] == s2[i] && s1[i] && s2[i])
 	{
 		i++;
 	}
