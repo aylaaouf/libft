@@ -21,7 +21,7 @@ make
 ```
 ```
 2. Compile with your project:
-gcc your_program.c -L. -lft
+gcc your_program.c
 ```
 ## Testing
 
