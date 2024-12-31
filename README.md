@@ -26,5 +26,5 @@ gcc your_program.c
 ## Testing
 
 ``` make
-./test_program  # run your tests
+./a.out  # run your tests
 ```
